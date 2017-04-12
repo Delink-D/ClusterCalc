@@ -3,6 +3,8 @@ package com.example.delink.clustercalc;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -22,6 +24,22 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        if (savedInstanceState == null) {
+            //Fragment load code
+
+            Fragment fragment = null;
+            Class fragmentClass = null;
+            fragmentClass = HomeFragment.class;
+            try {
+                fragment = (Fragment) fragmentClass.newInstance();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.flagContent, fragment).commit();
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -46,7 +64,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+//        getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
@@ -71,19 +89,31 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+        Fragment fragment = null;
+        Class fragmentClass = null;
+
         if (id == R.id.nav_home) {
-            // Handle the camera action
-        } else if (id == R.id.nav_courses) {
-
+            fragmentClass = HomeFragment.class;
         } else if (id == R.id.nav_grading) {
-
+            fragmentClass = GradingFragment.class;
+        } else if (id == R.id.nav_courses) {
+            fragmentClass = CoursesFragment.class;
         } else if (id == R.id.nav_manage) {
-
+            fragmentClass = ManageFragment.class;
         } else if (id == R.id.nav_share) {
-
+            fragmentClass = CoursesFragment.class;
         } else if (id == R.id.nav_send) {
-
+            fragmentClass = CoursesFragment.class;
         }
+
+        try {
+            fragment = (Fragment) fragmentClass.newInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.flagContent, fragment).commit();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
