@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "582834072759",
+    "firebase_url": "https://clustercalc.firebaseio.com",
+    "project_id": "clustercalc",
+    "storage_bucket": "clustercalc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582834072759:android:63388f00b8b3c265",
+        "android_client_info": {
+          "package_name": "com.example.delink.clustercalc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582834072759-40dlgbguhq30c7uomprpjp6u93tr1l59.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.delink.clustercalc",
+            "certificate_hash": "3f4834d8983b5e67c38def6bcbb07d08cb40a432"
+          }
+        },
+        {
+          "client_id": "582834072759-1f05gg6r5gdj091hu877dldh2rhlh3ma.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4CdkK6jt7L2_2sdm5I9kaFEMJyV93gmc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582834072759-1f05gg6r5gdj091hu877dldh2rhlh3ma.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
