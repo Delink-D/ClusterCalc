@@ -2,12 +2,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#eee"
     tools:context="com.example.delink.clustercalc.ui.GroupIFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
+        android:layout_marginTop="60dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Group 1" />
+        android:layout_height="300dp"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:background="@color/cardview_light_background"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/group_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorIcons"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:text="Group I" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/group_title">
+
+
+        </RelativeLayout>
+    </RelativeLayout>
 
 </FrameLayout>

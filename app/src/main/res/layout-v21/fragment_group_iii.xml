@@ -34,10 +34,10 @@
                     android:textSize="20sp"
                     android:padding="10dp"
                     android:layout_marginBottom="16dp"
-                    android:text="Group II" />
+                    android:text="Group III" />
 
                 <RelativeLayout
-                    android:id="@+id/layout_phy"
+                    android:id="@+id/layout_hist"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -46,51 +46,51 @@
                     android:layout_marginRight="@dimen/activity_horizontal_margin">
 
                     <TextView
-                        android:text="PHYSICS"
+                        android:text="HISTORY"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="17sp"
                         android:textStyle="bold"
                         android:paddingTop="10dp"
-                        android:id="@+id/physics" />
+                        android:id="@+id/history" />
 
                     <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:hint="PHY"
+                        android:hint="HIST"
                         android:ems="5"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentEnd="true"
                         android:layout_marginEnd="65dp"
-                        android:id="@+id/grade_phy" />
+                        android:id="@+id/grade_hist" />
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/layout_chem"
+                    android:id="@+id/layout_geo"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/layout_phy"
+                    android:layout_below="@+id/layout_hist"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="@dimen/activity_horizontal_margin"
                     android:layout_marginRight="@dimen/activity_horizontal_margin">
 
                     <TextView
-                        android:text="CHEMISTRY"
+                        android:text="GEOGRAPHY"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="17sp"
                         android:textStyle="bold"
                         android:paddingTop="10dp"
-                        android:id="@+id/chemistry" />
+                        android:id="@+id/geography" />
 
                     <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:hint="CHEM"
+                        android:hint="GEO"
                         android:ems="5"
-                        android:id="@+id/grade_chem"
+                        android:id="@+id/grade_geo"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentEnd="true"
@@ -98,30 +98,30 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/layout_bio"
+                    android:id="@+id/layout_religion"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/layout_chem"
+                    android:layout_below="@+id/layout_geo"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="@dimen/activity_horizontal_margin"
                     android:layout_marginRight="@dimen/activity_horizontal_margin">
 
                     <TextView
-                        android:text="BIOLOGY"
+                        android:text="CRE/ IRE/ HRE"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="17sp"
                         android:textStyle="bold"
                         android:paddingTop="10dp"
-                        android:id="@+id/biology" />
+                        android:id="@+id/religious" />
 
                     <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:hint="BIO"
+                        android:hint="Grade"
                         android:ems="5"
-                        android:id="@+id/grade_bio"
+                        android:id="@+id/grade_religious"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentEnd="true"
@@ -131,7 +131,7 @@
             </RelativeLayout>
 
             <Button
-                android:id="@+id/save_group_ii"
+                android:id="@+id/save_group_iii"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
@@ -143,6 +143,7 @@
                 android:layout_marginTop="@dimen/activity_horizontal_margin"
                 android:background="@drawable/btn_shape"
                 android:layout_below="@+id/subs_container"/>
+
         </RelativeLayout>
 
     </ScrollView>

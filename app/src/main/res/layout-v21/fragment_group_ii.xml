@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.delink.clustercalc.ui.GroupIIIFragment">
+    tools:context="com.example.delink.clustercalc.ui.GroupIIFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView

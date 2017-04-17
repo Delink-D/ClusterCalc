@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.delink.clustercalc.ui.GroupIIIFragment">
+    android:background="#eee"
+    tools:context="com.example.delink.clustercalc.ui.GroupIFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
@@ -34,10 +35,10 @@
                     android:textSize="20sp"
                     android:padding="10dp"
                     android:layout_marginBottom="16dp"
-                    android:text="Group II" />
+                    android:text="Group I" />
 
                 <RelativeLayout
-                    android:id="@+id/layout_phy"
+                    android:id="@+id/layout_math"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -46,51 +47,51 @@
                     android:layout_marginRight="@dimen/activity_horizontal_margin">
 
                     <TextView
-                        android:text="PHYSICS"
+                        android:text="MATHEMATICS"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="17sp"
                         android:textStyle="bold"
                         android:paddingTop="10dp"
-                        android:id="@+id/physics" />
+                        android:id="@+id/math" />
 
                     <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:hint="PHY"
+                        android:hint="MAT"
                         android:ems="5"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentEnd="true"
                         android:layout_marginEnd="65dp"
-                        android:id="@+id/grade_phy" />
+                        android:id="@+id/grade_mat" />
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/layout_chem"
+                    android:id="@+id/layout_eng"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/layout_phy"
+                    android:layout_below="@+id/layout_math"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="@dimen/activity_horizontal_margin"
                     android:layout_marginRight="@dimen/activity_horizontal_margin">
 
                     <TextView
-                        android:text="CHEMISTRY"
+                        android:text="ENGLISH"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="17sp"
                         android:textStyle="bold"
                         android:paddingTop="10dp"
-                        android:id="@+id/chemistry" />
+                        android:id="@+id/english" />
 
                     <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:hint="CHEM"
+                        android:hint="ENG"
                         android:ems="5"
-                        android:id="@+id/grade_chem"
+                        android:id="@+id/grade_eng"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentEnd="true"
@@ -98,30 +99,30 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/layout_bio"
+                    android:id="@+id/layout_kis"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/layout_chem"
+                    android:layout_below="@+id/layout_eng"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="@dimen/activity_horizontal_margin"
                     android:layout_marginRight="@dimen/activity_horizontal_margin">
 
                     <TextView
-                        android:text="BIOLOGY"
+                        android:text="KISWAHILI"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="17sp"
                         android:textStyle="bold"
                         android:paddingTop="10dp"
-                        android:id="@+id/biology" />
+                        android:id="@+id/kiswahili" />
 
                     <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:hint="BIO"
+                        android:hint="KIS"
                         android:ems="5"
-                        android:id="@+id/grade_bio"
+                        android:id="@+id/grade_kis"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentEnd="true"
@@ -131,7 +132,7 @@
             </RelativeLayout>
 
             <Button
-                android:id="@+id/save_group_ii"
+                android:id="@+id/save_group_i"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
