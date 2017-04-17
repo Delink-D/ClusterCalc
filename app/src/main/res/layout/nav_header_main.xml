@@ -16,6 +16,7 @@
         android:id="@+id/profile_image"
         android:layout_width="60dp"
         android:layout_height="60dp"
+        android:background="@drawable/profile_bg"
         app:srcCompat="@drawable/ic_account_circle_white_24dp" />
 
     <TextView

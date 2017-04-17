@@ -36,8 +36,6 @@ public class GradingFragment extends Fragment implements View.OnClickListener {
     private FirebaseRecyclerAdapter mFirebaseAdapter;
 
     @Bind(R.id.recyclerview) RecyclerView mRecyclerview;
-    @Bind(R.id.btn)
-    Button btn;
 
     public GradingFragment() {
         // Required empty public constructor
@@ -56,7 +54,6 @@ public class GradingFragment extends Fragment implements View.OnClickListener {
         View view = inflater.inflate(R.layout.fragment_grading, container, false);
 
         ButterKnife.bind(this, view);
-        btn.setOnClickListener(this);
 
         setUpFirebaseAdapter();
 
@@ -79,8 +76,5 @@ public class GradingFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if (v == btn){
-            Toast.makeText(getActivity(), "TOASTED!",Toast.LENGTH_SHORT).show();
-        }
     }
 }
