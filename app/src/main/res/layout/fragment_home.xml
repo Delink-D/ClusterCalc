@@ -2,14 +2,160 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.delink.clustercalc.HomeFragment">
+    android:background="#eeeeee"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.delink.clustercalc.ui.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="50sp"
-        android:text="HOME!"
-        android:id="@+id/textView2" />
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_your_scores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            app:cardElevation="@dimen/cardview_default_elevation">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/home_card_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Scores"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="#0097A7"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/home_card_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp">
+
+                    <!--Left column-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mathematics"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="A"/>
+                    </LinearLayout>
+
+                    <!--Right Column -->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--Recycler view to display all subjects-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/cardview_default_elevation"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/card_your_scores">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/course_card_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LIST OF COURSES"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="#0097A7"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_below="@+id/course_card_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:id="@+id/list_courses_tr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:gravity="center">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="20dp"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:id="@+id/course_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:textStyle="bold"
+                                android:text="Course Name"/>
+
+                            <TextView
+                                android:id="@+id/cluster_point"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cluster Points"
+                                android:layout_marginTop="3dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                    </TableRow>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="7dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/courseHomeRecyclerView"
+                            android:background="#ddd"
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <!--Courses will display here-->
+
+                        </android.support.v7.widget.RecyclerView>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
 
 </FrameLayout>

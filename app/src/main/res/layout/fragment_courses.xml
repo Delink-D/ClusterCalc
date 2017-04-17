@@ -1,15 +1,74 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.delink.clustercalc.CoursesFragment">
+    android:background="#eee"
+    tools:context="com.example.delink.clustercalc.ui.CoursesFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="50sp"
-        android:text="COURSES!"
-        android:id="@+id/textView2" />
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/list_courses_tr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="center">
+
+            <TextView
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="LIST OF COURSES "/>
+        </TableRow>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/Course_list_title"
+            android:layout_below="@+id/list_courses_tr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:elevation="@dimen/cardview_default_elevation">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="7dp"
+                android:paddingRight="20dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/course_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:text="Course Name"/>
+
+                <TextView
+                    android:id="@+id/cluster_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cluster Points"
+                    android:layout_marginTop="3dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/Course_list_title"
+            android:id="@+id/courseRecyclerView"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
 
 </FrameLayout>

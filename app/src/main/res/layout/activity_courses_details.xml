@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_courses_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    tools:context="com.example.delink.clustercalc.ui.CoursesDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/details_top"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/details_course_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorIcons"
+            android:layout_centerInParent="true"
+            android:text="COURSE NAME"/>
+        <TextView
+            android:id="@+id/details_course_cluster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_below="@+id/details_course_name"
+            android:textColor="@color/colorAccent"
+            android:text="Cluster Point: 32.47"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/details_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/cardview_default_radius"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:elevation="@dimen/cardview_default_elevation">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="9dp">
+
+                <TextView
+                    android:id="@+id/details_required"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Required Subjects"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="17dp"/>
+
+                <TableLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/required_subs"
+                    android:layout_below="@+id/details_required"
+                    android:layout_width="match_parent"
+                    android:background="#F5F5F5"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:paddingTop="3dp"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="3dp"
+                        android:background="#EEE">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Subject 1"/>
+                    </TableRow>
+                    <TableRow
+                        android:paddingTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/details_sub1"
+                            android:text="MAT/ENG/KIS/PHY/CHEM"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:paddingTop="3dp"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="3dp"
+                        android:background="#EEE">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Subject 2"/>
+                    </TableRow>
+                    <TableRow
+                        android:paddingTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/details_sub2"
+                            android:text="MAT/ENG/KIS/PHY/CHEM"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:paddingTop="3dp"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="3dp"
+                        android:background="#EEE">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Subject 3"/>
+                    </TableRow>
+                    <TableRow
+                        android:paddingTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/details_sub3"
+                            android:text="MAT/ENG/KIS/PHY/CHEM"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:paddingTop="3dp"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="3dp"
+                        android:background="#EEE">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Subject 4"/>
+                    </TableRow>
+                    <TableRow
+                        android:paddingTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/details_sub4"
+                            android:text="MAT/ENG/KIS/PHY/CHEM"/>
+                    </TableRow>
+                </TableLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#229922"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textColor="@color/colorIcons"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:text="Your points dont allow you to take the Course"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+<!--
+    ** if there is an error
+    android:background="#ce2222"
+-->

@@ -1,4 +1,4 @@
-package com.example.delink.clustercalc;
+package com.example.delink.clustercalc.ui;
 
 
 import android.os.Bundle;
@@ -7,14 +7,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.delink.clustercalc.R;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class GradingFragment extends Fragment {
+public class GroupIIFragment extends Fragment {
 
 
-    public GradingFragment() {
+    public GroupIIFragment() {
         // Required empty public constructor
     }
 
@@ -23,7 +24,7 @@ public class GradingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_grading, container, false);
+        return inflater.inflate(R.layout.fragment_group_ii, container, false);
     }
 
 }
