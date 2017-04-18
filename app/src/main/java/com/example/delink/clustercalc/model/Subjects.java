@@ -26,7 +26,8 @@ public class Subjects {
     }
     public String getSub3(){
         return sub3;
-    } public String getSub4(){
+    }
+    public String getSub4(){
         return sub4;
     }
     public String getSub5(){
